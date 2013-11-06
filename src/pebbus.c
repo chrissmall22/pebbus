@@ -1,4 +1,3 @@
-
 #include "pebble_os.h"
 #include "pebble_app.h"
 #include "pebble_fonts.h"
@@ -44,7 +43,7 @@ void handle_init(AppContextRef _ctx) {
 }
 
 
-void pbl_main(void *params) {
+void main(void *params) {
   PebbleAppHandlers handlers = {
     .init_handler = &handle_init,
     .messaging_info = {
